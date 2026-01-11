@@ -1,0 +1,77 @@
+/* General Layout */
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Fixed Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    position: fixed; /* Keeps sidebar on screen */
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    font-size: 1.2rem;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #818181;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: #f1f1f1; /* Hover effect for clickability */
+}
+
+/* Content Area */
+.content {
+    margin-left: 280px; /* Offset for sidebar width + padding */
+    padding: 40px;
+    width: 100%;
+}
+
+article {
+    background: white;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+}
