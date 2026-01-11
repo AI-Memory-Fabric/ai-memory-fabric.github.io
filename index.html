@@ -1,127 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Blog</title>
-    <style>
-        /* Reset some default styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-
-        nav {
-            background: #444;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav a {
-            color: #fff;
-            padding: 0.75rem 1.5rem;
-            text-decoration: none;
-            transition: background 0.3s;
-        }
-
-        nav a:hover {
-            background: #555;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 1rem;
-        }
-
-        article {
-            background: #fff;
-            margin-bottom: 1.5rem;
-            padding: 1rem;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        article img {
-            max-width: 100%;
-            border-radius: 5px;
-        }
-
-        article h2 {
-            margin: 0.5rem 0;
-        }
-
-        article p {
-            margin: 0.5rem 0;
-        }
-
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-
-        /* Responsive */
-        @media (max-width: 600px) {
-            nav {
-                flex-direction: column;
-            }
-            nav a {
-                padding: 1rem;
-                border-top: 1px solid #555;
-            }
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog with Sidebar</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>My Blog</h1>
-        <p>Sharing thoughts, ideas, and stories</p>
-    </header>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+    <!-- Left Sidebar Panel -->
+    <nav class="sidebar">
+        <h2>Recent Posts</h2>
+        <ul>
+            <li><a href="#post1">Mastering CSS Flexbox</a></li>
+            <li><a href="#post2">Top Web Trends in 2026</a></li>
+            <li><a href="#post3">How to Build a Sidebar</a></li>
+            <li><a href="#post4">JavaScript Best Practices</a></li>
+        </ul>
     </nav>
 
-    <div class="container">
-        <article>
-            <img src="https://via.placeholder.com/800x300" alt="Blog Image">
-            <h2>First Blog Post</h2>
-            <p><small>Posted on January 11, 2026 by Admin</small></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet facilisis urna. Praesent ac bibendum libero. Nulla facilisi.</p>
-            <a href="#">Read more...</a>
+    <!-- Main Content Area -->
+    <main class="content">
+        <article id="post1">
+            <h1>Mastering CSS Flexbox</h1>
+            <p>Flexbox is a powerful tool for layout design...</p>
         </article>
-
-        <article>
-            <img src="https://via.placeholder.com/800x300" alt="Blog Image">
-            <h2>Second Blog Post</h2>
-            <p><small>Posted on January 5, 2026 by Admin</small></p>
-            <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla porttitor accumsan tincidunt.</p>
-            <a href="#">Read more...</a>
+        <hr>
+        <article id="post2">
+            <h1>Top Web Trends in 2026</h1>
+            <p>In 2026, web design has shifted toward minimalist AI interfaces...</p>
         </article>
-    </div>
+    </main>
 
-    <footer>
-        <p>&copy; 2026 My Blog. All rights reserved.</p>
-    </footer>
 </body>
 </html>
